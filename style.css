@@ -1,0 +1,262 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "open sans", "sans-serif";
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#menu-item ul {
+  list-style: none;
+  width: 300px;
+  margin: 10px auto;
+  text-decoration: none;
+}
+#menu-item ul li {
+  display: inline;
+  list-style: none;
+}
+#menu-item ul li a {
+  color: #ffff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+#menu-item ul li a:hover {
+  background-color: rgb(170, 168, 179);
+}
+.flex-container {
+  display: flex;
+  max-width: 992px;
+  margin: auto;
+  width: 100%;
+  min-width: 320px;
+}
+
+header {
+  background-color: blueviolet;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.apresentacao {
+  height: 50vh;
+  align-items: center;
+  justify-content: space-between;
+}
+#text {
+  color: #3e103a;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  min-width: 200px;
+  width: 100%;
+}
+.apresentacao .texto-apresentacao {
+  min-width: 200px;
+  width: 100%;
+}
+
+.texto-apresentacao h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.btn {
+  background-color: rgb(56, 5, 56);
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  width: 220px;
+  display: block;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.banner {
+  margin-top: 300px;
+}
+#quem-somos {
+  padding: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+#quem-somos h2 {
+  font-size: 32px;
+  color: rgb(56, 5, 56);
+  display: flex;
+}
+#quem-somos h2::before {
+  content: "";
+  height: 50px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: #122a57;
+  position: relative;
+}
+#quem-somos p {
+  margin-top: 20px;
+}
+section h2 {
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -0.47px;
+  text-align: center;
+}
+
+section p {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.18px;
+  color: #a1a1aa;
+  text-align: center;
+}
+section ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section ul li {
+  transition: transform 0.3s;
+}
+
+section ul li:hover {
+  transform: scale(1.1);
+}
+
+.social-list img {
+  max-width: 40px;
+  max-height: 40px;
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  justify-content: center;
+}
+
+article h1 {
+  color: #3e103a;
+  font-size: 48px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+article h5 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+fieldset {
+  width: 60%;
+  padding: 30px 0 20px;
+  margin-left: 300px;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+}
+
+#frminscricao {
+  line-height: 1.15;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+form {
+  padding-left: 300px;
+}
+
+#btnEnviar {
+  background-color: rgb(56, 5, 56);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 30px;
+  width: 150px;
+  margin-left: 100px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+main {
+  background-image: url(./imagens/main5.webp);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+footer {
+  color: white;
+  background-color: blueviolet;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+  height: 40px;
+  top: 50px;
+  padding-top: 20px;
+  font-weight: 400;
+}
+
+/*Animação*/
+
+.banner {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 80%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*Responsivo*/
+@media screen and (max-width: 768px) {
+  header,
+  section {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul li a {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}

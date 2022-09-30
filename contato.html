@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meu Site</title>
+</head>
+
+<body>
+  <header>
+    <div class="flex-container menu">
+      <img src="./imagens/logo-ajuste.png" alt="Logo da empresa XPTO" width="150px" />
+    </div>
+    <!--<div class="sideMenu">
+      <img src="./imagens/menu-icon.svg" alt="Menu Icon">
+    </div> -->
+    <nav id="menu-item">
+      <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <article>
+        <h1>Contato</h1>
+        <p>Preencha os dados abaixo e envie sua mensagem de contato</p>
+        <br><br>
+        <h5 class="center">Dados do Contato</h5>
+        <fieldset>
+
+          <form id=" frminscricao" action="contato.php" method="post">
+            <label>Nome:</label><br>
+            <input type="text" required="required" id="txtNome" maxlength="100" size="50">
+            <br><br>
+            <label>Data de Nascimento:</label><br>
+            <input type="date" required="required" id="txtDataNascimento"><br><br>
+            <label>Sexo:</label><br>
+            <input type="radio" name="rdoSexo" value="M" required="required">
+            <label>Masculino</label>
+            <br><br>
+            <label>Sexo:</label><br>
+            <input type="radio" name="rdoSexo" value="F" required="required">
+            <label>Feminino</label>
+            <br><br>
+            <label>Endereço:</label><br>
+            <input type="text" required="required" id="txtLogradouro" maxlength="100" size="50"><br><br>
+            <label>Cidade:</label><br>
+            <input type="text" required="required" id="txtCidade" maxlength="100" size="50"><br><br>
+            <label>Estado:</label><br>
+            <select id="cbxEstado" required="required">
+              <option value="">-Selecione-</option>
+              <option value="1">AC</option>
+              <option value="2">AL</option>
+              <option value="3">AM</option>
+              <option value="25">AP</option>
+              <option value="4">BA</option>
+              <option value="5">CE</option>
+              <option value="6">DF</option>
+              <option value="7">ES</option>
+              <option value="8">GO</option>
+              <option value="9">MA</option>
+              <option value="10">MS</option>
+              <option value="25">MT</option>
+              <option value="11">MG</option>
+              <option value="12">PA</option>
+              <option value="13">PB</option>
+              <option value="14">PR</option>
+              <option value="15">PE</option>
+              <option value="16">PI</option>
+              <option value="17">RJ</option>
+              <option value="18">RN</option>
+              <option value="19">RS</option>
+              <option value="20">RO</option>
+              <option value="21">RR</option>
+              <option value="22">SC</option>
+              <option value="23">SP</option>
+              <option value="24">SE</option>
+              <option value="25">TO</option>
+            </select>
+            <br><br>
+            <label>Celular:</label><br>
+            <input type="tel" required="required" id="txtCelular" size="50" placeholder="(##) #####-####"
+              maxlength="15"><br><br>
+            <label>E-mail:</label><br>
+            <input type="email" required="required" size="50" id="txtEmail"><br><br>
+            <label>Áreas de Interesse:</label><br>
+
+            <input type="checkbox" value="HTML" name="chkAreasInteresse">
+
+            <label>HTML</label>
+
+            <input type="checkbox" value="CSS" name="chkAreasInteresse">
+
+            <label>CSS</label>
+
+            <input type="checkbox" value="JavaScript" name="chkAreasInteresse">
+
+            <label>JavaScript</label><br><br>
+            <label>Mensagem:</label><br><br>
+
+            <textarea cols="50" rows="5" required="required"></textarea><br><br>
+            <input id="btnEnviar" type="submit" value="Enviar" />
+          </form>
+        </fieldset>
+      </article>
+    </section>
+    <section>
+      <div>
+        <ul class="social-list">
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/paula-k-sousa/">
+              <img src="https://img.icons8.com/fluency/2x/linkedin-2.png" alt="Foto icone do GitHub"></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/Paulasousa1">
+              <img src="https://img.icons8.com/sf-black-filled/2x/github.png" alt="Foto icone do GitHub">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/paulakarinesp/">
+              <img src="https://img.icons8.com/fluency/2x/instagram-new.png" alt="Foto icone do instagram">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2022 - Paula Sousa - Direitos Reservados
+  </footer>
+</body>
+
+</html>
